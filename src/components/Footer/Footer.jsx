@@ -2,7 +2,8 @@
 
 // Node Module Imports
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube, AiOutlineTwitch, AiOutlineX } from 'react-icons/ai';
-import { DiDropbox, DiFirefox, DiJavascript1, DiReact } from 'react-icons/di';
+import { DiFirefox, DiJavascript1, DiReact } from 'react-icons/di';
+import { PiCassetteTapeFill } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 // Local Module Imports
 import './Footer.css';
@@ -31,8 +32,13 @@ export default function Footer() {
             </p>
             <p>
                 <span className='site-footer__text-icon'>
-                    <DiDropbox />
-                </span> Asset Delivery served via Dropbox
+                    <PiCassetteTapeFill />
+                </span><div>
+                    Asset Delivery powered by{" "}
+                    <a href='https://github.com/9001/copyparty' target='_blank' rel='noreferrer'>
+                        copyparty
+                    </a>
+                </div>
             </p>
             <p>
                 <span className='site-footer__text-icon'>
