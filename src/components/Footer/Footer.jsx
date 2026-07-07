@@ -51,7 +51,7 @@ export default function Footer() {
         <div id='site-footer-wctv'>
             <p>Created & Maintained by WildCharger</p>
             <div id='site-footer-socials'>
-                <Link to='https://github.com/WildChargerTV/aa-capstone-es-builder'>
+                <Link to='https://github.com/WildChargerTV'>
                     <AiFillGithub />
                 </Link>
                 <Link to='https://www.linkedin.com/in/ethan-guan-ba453a2a0/'>
