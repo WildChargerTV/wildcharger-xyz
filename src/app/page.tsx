@@ -32,7 +32,7 @@ export default function Page(): import('react').JSX.Element {
       </p>
       <div className='max-md:mt-[4vw] md:max-w-[50%]'>
         <img 
-          src='/wcxyz-njs/img/landing/characters.png' 
+          src='/wildcharger-xyz/img/landing/characters.png' 
           alt='WildCharger brand featured characters'
           className='object-contain'
         />

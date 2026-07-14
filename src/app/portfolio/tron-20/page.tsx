@@ -38,7 +38,7 @@ export default function Page() : import('react').JSX.Element {
       </p>
       <div>
         <img 
-          src='/wcxyz-njs/img/portfolio/tron-20/jet-bradley.png' 
+          src='/wildcharger-xyz/img/portfolio/tron-20/jet-bradley.png' 
           alt='Jet Bradley, the protagonist of TRON 2.0'
           className='object-contain'
         />
@@ -74,7 +74,7 @@ export default function Page() : import('react').JSX.Element {
       </p>
       <div>
         <img 
-          src='/wcxyz-njs/img/portfolio/tron-20/icp-regular.png' 
+          src='/wildcharger-xyz/img/portfolio/tron-20/icp-regular.png' 
           alt='An ICP Regular, a common enemy type in TRON 2.0'
           className='object-contain'
         />
@@ -126,7 +126,7 @@ export default function Page() : import('react').JSX.Element {
     <div className='grid grid-cols-[repeat(3,1fr)] md:grid-cols-[repeat(3,15%)] m-auto mt-[3vw] md:mt-[1.5vw]'>
       <div className='flex flex-col items-center'>
         <img 
-          src='/wcxyz-njs/img/portfolio/tron-20/hq-music-album.png' 
+          src='/wildcharger-xyz/img/portfolio/tron-20/hq-music-album.png' 
           alt='TRON 2.0 High Quality Game Music Album Cover'
           className='object-contain'
         />
@@ -143,7 +143,7 @@ export default function Page() : import('react').JSX.Element {
     
     {/* Footer Meme (Drive C Forever) */}
     <img 
-      src='/wcxyz-njs/img/portfolio/tron-20/footer-meme.png' 
+      src='/wildcharger-xyz/img/portfolio/tron-20/footer-meme.png' 
       alt='Footer Meme'
       className='mt-[12.5vw] md:mt-[3vw] w-full'
     />

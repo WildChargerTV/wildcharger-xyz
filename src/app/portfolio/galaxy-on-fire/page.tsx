@@ -27,7 +27,7 @@ export default function Page() : import('react').JSX.Element {
       </p>
       <div>
         <img 
-          src='/wcxyz-njs/img/portfolio/galaxy-on-fire/nemesis.png' 
+          src='/wildcharger-xyz/img/portfolio/galaxy-on-fire/nemesis.png' 
           alt='Nemesis, a Deep Science ship featured in the Valkyrie DLC of Galaxy on Fire 2'
           className='object-contain'
         />
@@ -59,7 +59,7 @@ export default function Page() : import('react').JSX.Element {
       </p>
       <div className='grid min-w-[15vw] grid-rows-[25%_75%] max-md:mt-[3vw]'>
         <img 
-          src='/wcxyz-njs/img/portfolio/galaxy-on-fire/wiki-logo.png' 
+          src='/wildcharger-xyz/img/portfolio/galaxy-on-fire/wiki-logo.png' 
           alt='Logo of the Galaxy on Fire Wiki'
           className='object-contain w-full h-full'
         />
@@ -88,7 +88,7 @@ export default function Page() : import('react').JSX.Element {
       {/* GoF3D Album */}
       <div className='flex flex-col items-center'>
         <img 
-          src='/wcxyz-njs/img/portfolio/galaxy-on-fire/gof3d-album.png' 
+          src='/wildcharger-xyz/img/portfolio/galaxy-on-fire/gof3d-album.png' 
           alt='Galaxy on Fire 3D Soundtrack Album Cover'
           className='object-contain w-[90%]'
         />
@@ -109,7 +109,7 @@ export default function Page() : import('react').JSX.Element {
       {/* GoF2 Soundtrack Album */}
       <div className='flex flex-col items-center'>
         <img 
-          src='/wcxyz-njs/img/portfolio/galaxy-on-fire/gof2-album-1.png' 
+          src='/wildcharger-xyz/img/portfolio/galaxy-on-fire/gof2-album-1.png' 
           alt='Galaxy on Fire 2 Soundtrack Album Cover'
           className='object-contain w-[90%]'
         />
@@ -130,7 +130,7 @@ export default function Page() : import('react').JSX.Element {
       {/* GoF2 Game Music Album */}
       <div className='flex flex-col items-center'>
         <img 
-          src='/wcxyz-njs/img/portfolio/galaxy-on-fire/gof2-album-2.png' 
+          src='/wildcharger-xyz/img/portfolio/galaxy-on-fire/gof2-album-2.png' 
           alt='Galaxy on Fire 2 Game Music Album Cover'
           className='object-contain w-[90%]'
         />
