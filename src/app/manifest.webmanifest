@@ -1,0 +1,15 @@
+{
+  "name": "WildCharger.xyz",
+  "short_name": "WildCharger.xyz",
+  "description": "Only the most inconsistent content on the internet. But now it has a central hub.",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "128x128",
+      "type": "image/x-icon"
+    }
+  ],
+  "background_color": "#17273d"
+}

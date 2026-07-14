@@ -1,0 +1,27 @@
+/* * src/app/global.css */
+
+@import '../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
+@import 'tailwindcss';
+
+@layer components {
+  .site-bg {
+    background: linear-gradient(115deg, #16263c 0%, #16263c 55%, #aa272e 100%);
+  }
+  .text-outline-title {
+    -webkit-text-stroke: 0.35vw black;
+    paint-order: stroke fill;
+  }
+  .text-outline-h {
+    -webkit-text-stroke: 0.25vw black;
+    paint-order: stroke fill;
+  }
+}
+
+@theme inline {
+  /* Font Variable Declarations */
+  --font-lato: var(--font-lato);
+  --font-montserrat: var(--font-montserrat);
+  --font-titillium-web: var(--font-titillium-web);
+  --font-jet-bradley: var(--font-jet-bradley);
+  --font-xirod: var(--font-xirod);
+}

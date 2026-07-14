@@ -1,47 +1,36 @@
 {
-    "name": "wildcharger-xyz",
-    "author": "WildCharger",
-    "license": "N/A",
-    "description": "WildCharger's GitHub Pages site (frontend only!)",
-    "homepage": "https://wildcharger.xyz/",
-    "private": true,
-    "version": "1.0.0",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -b deploy -d dist",
-        "dev": "vite",
-        "build": "vite build",
-        "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview",
-        "watch": "vite build --watch"
-    },
-    "dependencies": {
-        "@emailjs/browser": "^4.4.1",
-        "@reduxjs/toolkit": "^2.5.0",
-        "@vitejs/plugin-react": "^4.3.4",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "react-icons": "^5.4.0",
-        "react-redux": "^9.2.0",
-        "react-router-dom": "^6.28.1",
-        "react-slideshow-image": "^4.3.2",
-        "redux": "^5.0.1",
-        "redux-thunk": "^3.1.0",
-        "reselect": "^5.1.1",
-        "use-fit-text": "^2.4.0"
-    },
-    "devDependencies": {
-        "eslint": "^8.57.1",
-        "eslint-plugin-react": "^7.37.3",
-        "eslint-plugin-react-hooks": "^5.1.0",
-        "eslint-plugin-react-refresh": "^0.4.16",
-        "gh-pages": "^6.3.0",
-        "vite": "^6.0.7",
-        "vite-plugin-eslint": "^1.8.1"
-    },
-    "allowScripts": {
-        "esbuild@0.24.2": true
-    }
+  "name": "wildcharger-xyz",
+  "author": "Ethan Guan",
+  "license": "N/A",
+  "description": "GitHub Pages site for the WildCharger brand",
+  "homepage": "https://wildcharger.xyz/",
+  "private": true,
+  "version": "2.0.0",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/postcss": "^4.3.2",
+    "clsx": "^2.1.1",
+    "next": "^16.2.10",
+    "postcss": "^8.5.16",
+    "profanitybuster": "^0.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.7.0",
+    "react-responsive-carousel": "^3.2.23",
+    "tailwindcss": "^4.3.2",
+    "typescript": "6.0.3"
+  },
+  "scripts": {
+    "build": "next build",
+    "deploy": "gh-pages -d out",
+    "dev": "next dev",
+    "export": "next export",
+    "predeploy": "pnpm run build && pnpm run export",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.0",
+    "@types/react": "19.2.17",
+    "gh-pages": "^6.3.0"
+  }
 }
