@@ -1,6 +1,6 @@
 // * src/data/files.js
 
-const fileData = {
+const fileData : {[index: string]:string} = {
   "gof3d-official-soundtrack.zip":
     "https://cdn.wildcharger.xyz/wildcharger-xyz/gof/gof3d-official-soundtrack.zip",
   "gof2-official-soundtrack.zip":
