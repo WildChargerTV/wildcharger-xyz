@@ -8,15 +8,6 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import Link from 'next/link';
 
-/** List of available tabs to be displayed on the site. */
-const tabs = [
-  { name: 'Index', href: '/portfolio' },
-  { name: 'Galaxy on Fire', href: '/portfolio/galaxy-on-fire' },
-  { name: 'TRON 2.0', href: '/portfolio/tron-20' },
-  { name: 'EVERSPACE™', href: '/portfolio/everspace' },
-  { name: 'Content Creation', href: '/portfolio/content-creation' }
-];
-
 /**
  * ### Portfolio Tab Bar Component
  * Client component which renders the tab UI available only on the Portfolio page. Uses `clsx` to
@@ -26,6 +17,15 @@ const tabs = [
 export default function TabBar() : import('react').JSX.Element {
   // React Hooks
   const pathname = usePathname();
+
+  /** Declare all of the available tabs to be displayed on the site. */
+  const TABS = [
+    { name: 'Index', href: '/portfolio' },
+    { name: 'Galaxy on Fire', href: '/portfolio/galaxy-on-fire' },
+    { name: 'TRON 2.0', href: '/portfolio/tron-20' },
+    { name: 'EVERSPACE™', href: '/portfolio/everspace' },
+    { name: 'Content Creation', href: '/portfolio/content-creation' }
+  ];
 
   /** Return the tab bar content. */
   return (<div className='inline-flex gap-x-7 items-center md:justify-center h-full mx-[1vw] w-max md:w-full'>
