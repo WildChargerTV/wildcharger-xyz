@@ -20,12 +20,12 @@ export default function Page() : import('react').JSX.Element {
 
     {/* Page Description */}
     <p className='text-[4vw] md:text-[1.5vw]'>
-      At present, the best way to get in touch with me is to send an email to 
-      to <b>info@wildcharger.xyz</b>. You are welcome to either send an email directly, or use the
-      below contact form to send a ticketed request.
+      At present, the best way to get in touch is by sending an email to <b>info@wildcharger.xyz
+      </b>. You are welcome to either send an email directly, or use the below contact form to send
+      a ticketed request.
       <br /><br />
-      If you would like to get in touch with me via social media, my social links can be found in
-      the website&apos;s footer at the bottom of the page.
+      If you would like to get in touch via social media, you'll find links to all available
+      platforms in the website&apos;s footer at the bottom of the page.
     </p>
 
     {/* Site Contact Form */}
