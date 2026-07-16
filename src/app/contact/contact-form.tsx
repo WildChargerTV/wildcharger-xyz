@@ -48,6 +48,10 @@ export default function ContactForm() : import('react').JSX.Element {
     else if(message.length > 750)
       alert('Your message exceeds the 750-character limit. Please shorten your message and try again.');
 
+    // Ensure the formRef exists. This should never occur, and if it does, should be reported immediately.
+    else if(!formRef.current)
+      alert(`An error occurred, but it wasn't your fault. Please create a new issue on the site's GitHub repository with the error: ERR_FORM_NULL`);
+
     // Send the email, provided no other errors occur.
     else emailjs.sendForm('privateemail_info', 'contact_form', formRef.current, {
       publicKey: 'q6ePw5OFglADt8KoD'
