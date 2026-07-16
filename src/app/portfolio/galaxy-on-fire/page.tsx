@@ -1,7 +1,7 @@
 // * src/app/portfolio/galaxy-on-fire/page.tsx || Portfolio Page & Galaxy on Fire Tab
 
 // Local Module Imports
-import FileDownloadLink from '@app/_utils/FileDownloadLink';
+import FileDownloadButton from '@app/_utils/FileDownloadButton';
 
 /**
  * Renders the Galaxy on Fire tab of the Portfolio route.
@@ -92,7 +92,7 @@ export default function Page() : import('react').JSX.Element {
           alt='Galaxy on Fire 3D Soundtrack Album Cover'
           className='object-contain w-[90%]'
         />
-        <FileDownloadLink 
+        <FileDownloadButton 
           itemKey='gof3d-official-soundtrack.zip' linkText='Download' 
           style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]' 
         />
@@ -113,7 +113,7 @@ export default function Page() : import('react').JSX.Element {
           alt='Galaxy on Fire 2 Soundtrack Album Cover'
           className='object-contain w-[90%]'
         />
-        <FileDownloadLink 
+        <FileDownloadButton 
           itemKey='gof2-official-soundtrack.zip' linkText='Download' 
           style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]' 
         />
@@ -134,7 +134,7 @@ export default function Page() : import('react').JSX.Element {
           alt='Galaxy on Fire 2 Game Music Album Cover'
           className='object-contain w-[90%]'
         />
-        <FileDownloadLink
+        <FileDownloadButton
           itemKey='gof2-game-music.zip' linkText='Download' 
           style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]' 
         />

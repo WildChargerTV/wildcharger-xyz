@@ -1,7 +1,7 @@
 // * src/app/portfolio/tron-20/page.tsx || Portfolio Page & TRON 2.0 Tab
 
 // Local Module Imports
-import FileDownloadLink from '@app/_utils/FileDownloadLink';
+import FileDownloadButton from '@app/_utils/FileDownloadButton';
 
 /**
  * Renders the TRON 2.0 tab of the Portfolio route.
@@ -95,7 +95,7 @@ export default function Page() : import('react').JSX.Element {
         Killer App Mod</a>. A video of the mod&apos;s effect can be seen to the right (or below if
         on mobile).
         <br /><br />
-        <FileDownloadLink 
+        <FileDownloadButton 
           itemKey='tron-20-startup-sequence.zip' 
           linkText='Download' 
           style='border-2 box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-full'
@@ -130,7 +130,7 @@ export default function Page() : import('react').JSX.Element {
           alt='TRON 2.0 High Quality Game Music Album Cover'
           className='object-contain'
         />
-        <FileDownloadLink 
+        <FileDownloadButton 
           itemKey='tron20-hq-game-music.zip' linkText='Download' 
           style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
         />
