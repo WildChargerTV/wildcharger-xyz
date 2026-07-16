@@ -3,10 +3,7 @@
 
 import type { NextConfig } from 'next';
 
-const repoName = 'wildcharger-xyz';
 const nextConfig: NextConfig = {
-  assetPrefix: `/${repoName}/`,
-  basePath: `/${repoName}`,
   output: 'export'
 };
 
