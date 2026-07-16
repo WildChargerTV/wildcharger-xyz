@@ -83,7 +83,7 @@ export default function Page() {
       </p>
       <div>
         <img 
-          src='/wildcharger-xyz/img/portfolio/content-creation/esports-logos.png' 
+          src='/img/portfolio/content-creation/esports-logos.png' 
           alt='Team Emblems for the Esports teams Nectar & Resonance'
           className='object-contain'
         />
@@ -113,7 +113,7 @@ export default function Page() {
       </p>
       <div>
         <img 
-          src='/wildcharger-xyz/img/portfolio/content-creation/old-to-new.png' 
+          src='/img/portfolio/content-creation/old-to-new.png' 
           alt='A side-by-side showing the inspiration for the WildCharger mascot'
           className='object-contain max-md:mt-[6vw]'
         />
@@ -161,7 +161,7 @@ export default function Page() {
       </p>
       <div>
         <img 
-          src='/wildcharger-xyz/img/portfolio/content-creation/pm-character-collage.png' 
+          src='/img/portfolio/content-creation/pm-character-collage.png' 
           alt='A collage of various characters from the mobile game Pokémon Masters EX'
           className='object-contain max-md:my-[6vw]'
         />

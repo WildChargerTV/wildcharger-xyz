@@ -19,7 +19,7 @@ export default function ESBuilderSlideshow() : import('react').JSX.Element {
     <Carousel showThumbs={false} autoPlay infiniteLoop interval={10000}>
       {IMAGES.map((img) => (<div key={crypto.randomUUID()}>
         <img 
-          src={`/wcxyz-njs/img/portfolio/everspace/${img}.png`} 
+          src={`/img/portfolio/everspace/${img}.png`} 
           alt={`ESBuilder Slideshow Slide ${IMAGES.indexOf(img)}`} 
         />
       </div>))}

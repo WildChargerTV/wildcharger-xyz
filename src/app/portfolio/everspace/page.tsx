@@ -14,7 +14,7 @@ export default function Page() : import('react').JSX.Element {
     {/* Page Header */}
     <div className='h-fit'>
       <img 
-        src='/wcxyz-njs/img/portfolio/everspace/es1-logo.png' 
+        src='/img/portfolio/everspace/es1-logo.png' 
         alt='EVERSPACE™ Logo'
         className='m-[-1%] mb-[2vw] max-w-full md:max-w-[35%]'
       />
@@ -36,7 +36,7 @@ export default function Page() : import('react').JSX.Element {
       </p>
       <div>
         <img 
-          src='/wcxyz-njs/img/portfolio/everspace/interceptor.png' 
+          src='/img/portfolio/everspace/interceptor.png' 
           alt='Colonial Interceptor, one of the ships in EVERSPACE™'
           className='object-contain'
         />
