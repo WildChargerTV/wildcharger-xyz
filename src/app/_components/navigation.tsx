@@ -60,26 +60,26 @@ export default function Navigation(): import('react').JSX.Element {
   };
 
   /** Return the header once the catchphrase is loaded. */
-  return catchphrase && (<header className='font-montserrat sticky top-0 right-0 bottom-0 left-0 z-1 box-border w-full'>
-    <div className='flex w-full items-center justify-between gap-x-0 bg-[#40404080] px-[5vw] py-[2vw] text-[#ffffff] md:px-[50px] md:py-[20px]'>
+  if(catchphrase) return (<header className='box-border font-montserrat sticky top-0 right-0 bottom-0 left-0 text-white w-full z-1'>
+    <div className='bg-[#40404080] flex gap-x-0 items-center justify-between px-[5vw] md:px-[50px] py-[2vw] md:py-[20px] w-full'>
       {/* Site Title & Catchphrase (Dynamic 'Logo') */}
-      <div className='flex min-h-[75px] max-w-[90%] min-w-fit flex-col justify-center overflow-hidden text-right hover:text-[#e8e6e3] md:max-w-[50%]'>
+      <div className='flex flex-col min-h-[75px] justify-center overflow-hidden text-right max-w-[90%] md:max-w-[50%] min-w-fit'>
         <Link href='/'>
-          <h2 className='text-outline-title m-0 px-[0.25vw] py-0 text-[9vw]/[95%] font-extrabold uppercase md:text-[4.5vw]'>
+          <h2 className='font-extrabold m-0 px-[0.25vw] py-0 text-[9vw]/[95%] md:text-[4.5vw]/[85%] text-outline-title uppercase'>
             WildCharger
           </h2>
-          <h4 className='text-outline-h m-0 px-[0.25vw] py-0 text-[2.2vw] font-bold md:text-[1.1vw]'>
+          <h4 className='font-bold m-0 px-[0.25vw] py-0 text-[2.2vw] md:text-[1.1vw] text-outline-h'>
             {catchphrase}
           </h4>
         </Link>
       </div>
 
       {/* Site Nav Links */}
-      <div className='min-w-fit flex-wrap gap-y-[10px] text-[2vw] font-semibold md:min-w-[30%]'>
+      <div className='font-semibold text-[2vw] min-w-fit md:min-w-[30%]'>
         {/* Desktop Variant */}
-        <div className='hidden justify-center gap-x-[2.25vw] md:flex'>
-          <Link href='/portfolio'>Portfolio</Link>
-          <Link href='/contact'>Contact</Link>
+        <div className='gap-x-[2.25vw] hidden md:flex justify-center'>
+          <Link href='/portfolio' className='active:text-[#f9e2ad] hover:text-[#e8e6e3]'>Portfolio</Link>
+          <Link href='/contact' className='active:text-[#f9e2ad] hover:text-[#e8e6e3]'>Contact</Link>
         </div>
         {/* Mobile Variant w/ Dropdown Menu */}
         {/* TODO this is an awful dropdown. make a better one lol */}
@@ -87,10 +87,10 @@ export default function Navigation(): import('react').JSX.Element {
           <button className='text-[7.5vw]' onClick={toggleDropdown} ref={btnWidthRef}>
             <GiHamburgerMenu />
           </button>
-          <div className='relative h-0 w-0'>
+          <div className='h-0 relative w-0'>
             {showDropdown && (
               <div
-                className='absolute z-3 box-content flex flex-col border px-[10px] py-[5px] text-right text-[5vw] backdrop-brightness-50'
+                className='absolute backdrop-brightness-50 border box-content flex flex-col px-[10px] py-[5px] text-right text-[5vw] z-3'
                 ref={menuWidthRef}
                 style={{ left: dropdownLeft }}
               >
@@ -105,7 +105,7 @@ export default function Navigation(): import('react').JSX.Element {
     
     {/* Portfolio Tab Bar (visible only in the /portfolio route) */}
     {pathname.includes('/portfolio') && (
-      <div className='font-semibold text-[4vw] md:text-[1.75vw] bg-[#40404080] border-y-2 border-white h-[10vw] md:h-[5vw] w-full overflow-x-scroll scrollbar-none md:scrollbar-auto'>
+      <div className='bg-[#40404080] border-y-2 border-white font-semibold h-[10vw] md:h-[5vw] overflow-x-scroll scrollbar-none md:scrollbar-auto text-[4vw] md:text-[1.75vw] w-full'>
         <TabBar />
       </div>
     )}

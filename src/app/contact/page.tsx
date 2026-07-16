@@ -12,9 +12,9 @@ import ContactForm from '@app/contact/contact-form';
  */
 export default function Page() : import('react').JSX.Element {
   /** Return the page content. */
-  return (<main className='min-h-[33vw] mt-[3vw] mx-auto font-montserrat text-[#e8e6e3] w-[85%]'>
+  return (<main className='font-montserrat min-h-[33vw] mt-[3vw] mx-auto text-[#e8e6e3] w-[85%]'>
     {/* Page Title */}
-    <h1 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] font-extrabold text-outline-h'>
+    <h1 className='font-extrabold mb-[3vw] md:mb-[1.5vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       Contact
     </h1>
 

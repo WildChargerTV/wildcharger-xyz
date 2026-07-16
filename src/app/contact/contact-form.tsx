@@ -63,10 +63,10 @@ export default function ContactForm() : import('react').JSX.Element {
   /** Return the form body. */
   return (<form 
     ref={formRef} onSubmit={onSubmit}
-    className='flex flex-col gap-y-[2.5vw] md:gap-y-[0.5vw] w-full md:w-[75%] mx-auto my-[5vw] md:my-[3vw]'
+    className='flex flex-col gap-y-[2.5vw] md:gap-y-[0.5vw] mx-auto my-[5vw] md:my-[3vw] w-full md:w-[75%]'
   >
     {/* Name/Username & Email Address */}
-    <div className='inline-flex max-md:flex-col gap-x-[0.5vw] max-md:gap-y-[1.5vw] w-full'>
+    <div className='max-md:flex-col gap-x-[0.5vw] max-md:gap-y-[1.5vw] inline-flex w-full'>
       <input 
         type='text' 
         name='user_name' 

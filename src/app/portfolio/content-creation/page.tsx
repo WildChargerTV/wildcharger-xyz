@@ -9,7 +9,7 @@ export default function Page() {
   /** Return the page content. */
   return (<>
     {/* Page Header */}
-    <h2 className='text-[9vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] font-extrabold text-outline-h max-md:text-center'>
+    <h2 className='font-extrabold mb-[3vw] md:mb-[1.5vw] text-[9vw] md:text-[3.5vw] max-md:text-center text-outline-h'>
       Content Creation
     </h2>
 
@@ -23,7 +23,7 @@ export default function Page() {
     </p>
     
     {/* Backstory Paragraph */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       A Little Backstory
     </h3>
     <p className='mt-0 text-[4vw] md:text-[1.5vw]'>
@@ -58,10 +58,10 @@ export default function Page() {
     </p>
 
     {/* The Paladins Era */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       The Paladins Era
     </h3>
-    <div className='flex max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
+    <div className='flex max-md:flex-col md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[75%]'>
         When I first tried Paladins in 2016, I did find it fun; however, I wasn&apos;t really
         clicking with the complexities of the card system. A year later, however, around the time
@@ -89,7 +89,7 @@ export default function Page() {
         />
       </div>
     </div>
-    <div className='flex flex-row-reverse mt-[3vw] max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
+    <div className='flex flex-col md:flex-row-reverse md:gap-x-[5vw] items-center justify-between mt-[3vw]'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[60%]'>
         The decision to drop piRatemaster in favor of the WildCharger name was a no-brainer for me.
         Every single person I&apos;d mentioned the old name to always asked why the R was 
@@ -115,13 +115,13 @@ export default function Page() {
         <img 
           src='/img/portfolio/content-creation/old-to-new.png' 
           alt='A side-by-side showing the inspiration for the WildCharger mascot'
-          className='object-contain max-md:mt-[6vw]'
+          className='max-md:mt-[6vw] object-contain'
         />
       </div>
     </div>
 
     {/* The Variety Era */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       The 2019-2021 &quot;Variety Content&quot; Era
     </h3>
     <p className='mt-0 text-[4vw] md:text-[1.5vw]'>
@@ -140,10 +140,10 @@ export default function Page() {
     </p>
 
     {/* The Pokémon Masters Era */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       The Pokémon Masters Era
     </h3>
-    <div className='flex max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
+    <div className='flex max-md:flex-col md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[50%]'>
         When I first downloaded Pokémon Masters EX in December of 2020, I had become rather burnt
         out from playing Pokémon GO, and was just trying to find a game consisting of <i>dear god 
@@ -163,7 +163,7 @@ export default function Page() {
         <img 
           src='/img/portfolio/content-creation/pm-character-collage.png' 
           alt='A collage of various characters from the mobile game Pokémon Masters EX'
-          className='object-contain max-md:my-[6vw]'
+          className='max-md:my-[6vw] object-contain'
         />
       </div>
     </div>
@@ -200,7 +200,7 @@ export default function Page() {
     </p>
 
     {/* The Current Era */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       Where I Am Today
     </h3>
     <p className='mt-0 text-[4vw] md:text-[1.5vw]'>

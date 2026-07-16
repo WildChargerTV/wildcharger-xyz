@@ -21,7 +21,7 @@ export default function Page() : import('react').JSX.Element {
     </div>
 
     {/* Introductory Paragraph */}
-    <div className='flex max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
+    <div className='flex max-md:flex-col md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[67%]'>
         Following the bankruptcy & sale of FISHLABS GmbH to Deep Silver, its co-founders, alongside
         the original dev team of Galaxy on Fire, left the company to 
@@ -44,10 +44,10 @@ export default function Page() : import('react').JSX.Element {
     </div>
 
     {/* EVERSPACE™ Builder */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       EVERSPACE™ Builder (ESBuilder)
     </h3>
-    <div className='flex flex-row-reverse max-md:flex-col md:gap-x-[2vw] justify-between items-center'>
+    <div className='flex flex-col md:flex-row-reverse md:gap-x-[2vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[62.5%]'>
         <a href='https://esbuilder.wildcharger.xyz/' target='_blank' rel='noreferrer' className='font-bold'>
         EVERSPACE™ Builder</a> (or ESBuilder for short) is a companion tool that allows users to
@@ -63,7 +63,7 @@ export default function Page() : import('react').JSX.Element {
         <br /><br />
         <a 
           href='https://esbuilder.wildcharger.xyz/' target='_blank' rel='noreferrer' 
-          className='font-bold mt-[0.75vw] px-0 py-[0.5vw] text-center  w-full'
+          className='font-bold mt-[0.75vw] px-0 py-[0.5vw] text-center w-full'
         >Click or tap here to participate in the ESBuilder Beta!
         </a>
       </p>

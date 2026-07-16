@@ -8,7 +8,7 @@
 export default function Page() : import('react').JSX.Element {
   /** Return the page content. */
   return (<>
-    <h2 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] font-extrabold text-outline-h max-md:text-center'>
+    <h2 className='font-extrabold mb-[3vw] md:mb-[1.5vw] text-[10vw] md:text-[3.5vw] max-md:text-center text-outline-h'>
       Portfolio
     </h2>
     <p className='mt-0 text-[4vw] md:text-[1.5vw]'>

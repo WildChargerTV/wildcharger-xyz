@@ -13,12 +13,12 @@ export default function Page() : import('react').JSX.Element {
   /** Return the page content. */
   return (<>
     {/* Page Header */}
-    <h2 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] font-jet-bradley text-outline-h max-md:text-center'>
+    <h2 className='font-jet-bradley mb-[3vw] md:mb-[1.5vw] text-[10vw] md:text-[3.5vw] max-md:text-center text-outline-h'>
       TRON 2.0
     </h2>
 
     {/* Introductory Paragraph */}
-    <div className='flex max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
+    <div className='flex max-md:flex-col md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[65%]'>
         TRON 2.0 is a game I always saw as one of the greatest underappreciated gems from the early
         the early 2000s, and the game that inspired me to explore game development as a medium.
@@ -46,10 +46,10 @@ export default function Page() : import('react').JSX.Element {
     </div>
 
     {/* TRON 2.0: Security Protocol */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-jet-bradley font-extrabold text-outline-h'>
+    <h3 className='font-extrabold font-jet-bradley mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       TRON 2.0: SECURITY PROTOCOL
     </h3>
-    <div className='flex flex-row-reverse max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
+    <div className='flex flex-col md:flex-row-reverse md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[75%]'>
         <a href='https://github.com/WildChargerTV/TRON-2.0-Security-Protocol' target='_blank' rel='noreferrer' className='font-bold'>
         TRON 2.0: Security Protocol</a> is planned to be my custom campaign for TRON 2.0. It sees
@@ -82,11 +82,11 @@ export default function Page() : import('react').JSX.Element {
     </div>
 
     {/* TRON 2.0: Startup Sequence */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       TRON 2.0: Startup Sequence
     </h3>
-    <div className='flex max-md:flex-col md:gap-x-[5vw] justify-between items-center'>
-      <p className='mt-0 max-md:mb-[3vw] text-[4vw] md:text-[1.5vw] md:max-w-[50%]'>
+    <div className='flex max-md:flex-col md:gap-x-[5vw] items-center justify-between'>
+      <p className='max-md:mb-[3vw] mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[50%]'>
         TRON 2.0: Startup Sequence is a simple texture replacement for the opening credits I
         created in 2019. It converts all names to use the Jet Bradley font, and adds credits for
         the <a href='https://www.ldso.net/' target='_blank' rel='noreferrer' className='font-bold'>
@@ -98,7 +98,7 @@ export default function Page() : import('react').JSX.Element {
         <FileDownloadButton 
           itemKey='tron-20-startup-sequence.zip' 
           linkText='Download' 
-          style='border-2 box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-full'
+          style='border-2 box-border cursor-pointer font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-full'
         />
       </p>
       <iframe 
@@ -107,15 +107,15 @@ export default function Page() : import('react').JSX.Element {
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" 
         allowFullScreen
-        className='aspect-video border-0 max-md:mb-[25px] h-auto md:h-[33vh] w-full'
+        className='aspect-video border-0 h-auto md:h-[33vh] max-md:mb-[25px] w-full'
       />
     </div>
 
     {/* TRON 2.0 HQ VGM */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       TRON 2.0 High Quality Video Game Music
     </h3>
-    <p className='mt-0 max-md:mb-[3vw] text-[4vw] md:text-[1.5vw]'>
+    <p className='max-md:mb-[3vw] mt-0 text-[4vw] md:text-[1.5vw]'>
       TRON 2.0 utilizes a super cool music system (for the time) that allowed Monolith to make
       multiple versions of the same song, and then use a segment system to allow for seamless
       transitioning between low & high music intensities. While impressive, this unfortunately
@@ -128,15 +128,15 @@ export default function Page() : import('react').JSX.Element {
         <img 
           src='/img/portfolio/tron-20/hq-music-album.png' 
           alt='TRON 2.0 High Quality Game Music Album Cover'
-          className='object-contain'
+          className='object-contain w-[90%]'
         />
         <FileDownloadButton 
           itemKey='tron20-hq-game-music.zip' linkText='Download' 
-          style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          style='border box-border cursor-pointer font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
         />
         <a 
           href='https://www.youtube.com/playlist?list=PLVJSCg8T091e0BNvVSZikF8nzWoeYDxyy' target='_blank' rel='noreferrer'
-          className='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          className='border box-border font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
           >Playlist</a>
       </div>
     </div>

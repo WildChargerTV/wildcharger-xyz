@@ -14,11 +14,11 @@ import Link from 'next/link';
  * @component {@linkcode Footer}
  */
 export default function Footer(): import('react').JSX.Element {
-  return (<footer className='font-montserrat bg-[#40404080] block md:flex justify-around p-[1vw] text-[#e8e6e3]'>
   /** Return the footer content. */
+  return (<footer className='bg-[#40404080] block md:flex font-montserrat justify-around p-[1vw] text-[#e8e6e3]'>
     {/* Credits: Site Technology */}
-    <div className='max-w-[85%] md:max-w-[40%] m-auto md:m-0 text-center'>
-      <p className='text-[3vw] md:text-[1vw] my-[3vw] md:my-[1vw]'>
+    <div className='m-auto md:m-0 text-center max-w-[85%] md:max-w-[40%]'>
+      <p className='my-[3vw] md:my-[1vw] text-[3vw] md:text-[1vw]'>
         This website has been built by hand, for personal non-profit use. Any presence of
         copyrighted material beyond the WildCharger character is protected under the Copyright
         Disclaimer under Section 107 of the Copyright Act 1976, whereby allowance is made for
@@ -26,13 +26,13 @@ export default function Footer(): import('react').JSX.Element {
         scholarship, and research. Fair use is a use permitted by copyright statute that might
         otherwise be infringing.
       </p>
-      <p className='text-[3vw] md:text-[1vw] my-[3vw] md:my-[1vw] flex items-center justify-center'>
-        <span className='text-[4.5vw] md:text-[1.5vw] inline-flex align-middle mr-[0.5vw]'>
+      <p className='flex items-center justify-center my-[3vw] md:my-[1vw] text-[3vw] md:text-[1vw]'>
+        <span className='align-middle inline-flex mr-[0.5vw] text-[4.5vw] md:text-[1.5vw]'>
           <DiReact /><SiNextdotjs />
         </span> Powered by ReactJS via Next.js
       </p>
-      <p className='text-[3vw] md:text-[1vw] my-[3vw] md:my-[1vw] flex items-center justify-center'>
-        <span className='text-[4.5vw] md:text-[1.5vw] inline-flex align-middle mr-[0.5vw]'>
+      <p className='flex items-center justify-center my-[3vw] md:my-[1vw] text-[3vw] md:text-[1vw]'>
+        <span className='align-middle inline-flex mr-[0.5vw] text-[4.5vw] md:text-[1.5vw]'>
           <PiCassetteTapeFill />
         </span><span>
           Asset Delivery powered by{' '}
@@ -41,19 +41,19 @@ export default function Footer(): import('react').JSX.Element {
           </a>
         </span>
       </p>
-      <p className='text-[3vw] md:text-[1vw] my-[3vw] md:my-[1vw] flex items-center justify-center'>
-        <span className='text-[4.5vw] md:text-[1.5vw] inline-flex align-middle mr-[0.5vw]'>
+      <p className='flex items-center justify-center my-[3vw] md:my-[1vw] text-[3vw] md:text-[1vw]'>
+        <span className='align-middle inline-flex mr-[0.5vw] text-[4.5vw] md:text-[1.5vw]'>
           <DiFirefox />
         </span> Tested on Mozilla Firefox
       </p>
     </div>
 
     {/* Credits: Me. */}
-    <div className='max-w-[85%] md:max-w-[40%] m-auto md:m-0 flex flex-col items-center'>
-      <p className='text-[3vw] md:text-[1vw] my-[3vw] md:my-[1vw]'>
+    <div className='flex flex-col items-center m-auto md:m-0 mb-[3vw] max-w-[85%] md:max-w-[40%]'>
+      <p className='my-[3vw] md:my-[1vw] text-[3vw] md:text-[1vw]'>
         Created & Maintained by WildCharger
       </p>
-      <div className='text-[9vw] md:text-[3vw] my-[1vw] flex'>
+      <div className='flex my-[1vw] text-[9vw] md:text-[3vw]'>
         <Link href='https://github.com/WildChargerTV'><AiFillGithub /></Link>
         <Link href='https://www.linkedin.com/in/ethan-guan-ba453a2a0/'><AiFillLinkedin /></Link>
         <Link href='https://x.com/wildchargergame'><AiOutlineX /></Link>

@@ -13,12 +13,12 @@ export default function Page() : import('react').JSX.Element {
   /** Return the page content. */
   return (<>
     {/* Page Header */}
-    <h2 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] font-xirod text-outline-h max-md:text-center'>
+    <h2 className='font-xirod mb-[3vw] md:mb-[1.5vw] text-[10vw] md:text-[3.5vw] max-md:text-center text-outline-h'>
       GALAXY ON FIRE
     </h2>
 
     {/* Introductory Paragraph */}
-    <div className='flex max-md:flex-col md:gap-x-[5vw] justify-between max-md:items-center'>
+    <div className='flex max-md:flex-col md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw] md:max-w-[50%]'>
         I could not name one single franchise that has had a bigger impact on my life than the
         Galaxy on Fire series. I wasn&apos;t around for its Java phases, but ever since the first
@@ -35,10 +35,10 @@ export default function Page() : import('react').JSX.Element {
     </div>
 
     {/* The Galaxy on Fire Wiki & Kaamo Club */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       The Galaxy on Fire Wiki & Kaamo Club
     </h3>
-    <div className='flex flex-row-reverse max-md:flex-col md:gap-x-[5vw] justify-between max-md:items-center'>
+    <div className='flex flex-col md:flex-row-reverse md:gap-x-[5vw] items-center justify-between'>
       <p className='mt-0 text-[4vw] md:text-[1.5vw]'>
         My largest contribution to this community would be my time as the administrator of
         the <a href='https://galaxyonfire.wiki.gg/' target='_blank' rel='noreferrer' className='font-bold'>Galaxy on Fire
@@ -57,23 +57,23 @@ export default function Page() : import('react').JSX.Element {
         clicking on the bold link above or joining via the widget to the left (or below on mobile).
         We&apos;d love your patronage!
       </p>
-      <div className='grid min-w-[15vw] grid-rows-[25%_75%] max-md:mt-[3vw]'>
+      <div className='grid grid-rows-[25%_75%] max-md:mt-[3vw] min-w-[15vw]'>
         <img 
           src='/img/portfolio/galaxy-on-fire/wiki-logo.png' 
           alt='Logo of the Galaxy on Fire Wiki'
-          className='object-contain w-full h-full'
+          className='h-full object-contain w-full'
         />
         <iframe
           title='kaamo-club-embed'
           src='https://discord.com/widget?id=226528541368385536&theme=dark'  
           sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'
-          className='w-full h-full'
+          className='h-full w-full'
         />
       </div>
     </div>
 
     {/* Galaxy on Fire Soundtracks */}
-    <h3 className='text-[10vw] md:text-[3.5vw] mb-[3vw] md:mb-[1.5vw] mt-[3vw] font-extrabold text-outline-h'>
+    <h3 className='font-extrabold mb-[3vw] md:mb-[1.5vw] mt-[3vw] text-[10vw] md:text-[3.5vw] text-outline-h'>
       Galaxy on Fire Soundtracks
     </h3>
     <p className='mt-0 text-[4vw] md:text-[1.5vw]'>
@@ -94,15 +94,15 @@ export default function Page() : import('react').JSX.Element {
         />
         <FileDownloadButton 
           itemKey='gof3d-official-soundtrack.zip' linkText='Download' 
-          style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]' 
+          style='border box-border cursor-pointer font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]' 
         />
         <a 
           href='https://www.youtube.com/watch?v=eneWtnXU_Rg' target='_blank' rel='noreferrer'
-          className='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          className='border box-border font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
         >Video</a>
         <a 
           href='https://www.youtube.com/playlist?list=PLVJSCg8T091cLDPH7o7AHK5HYIvqtc6Qr' target='_blank' rel='noreferrer'
-          className='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          className='border box-border font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
         >Playlist</a>
       </div>
 
@@ -115,15 +115,15 @@ export default function Page() : import('react').JSX.Element {
         />
         <FileDownloadButton 
           itemKey='gof2-official-soundtrack.zip' linkText='Download' 
-          style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]' 
+          style='border box-border cursor-pointer font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]' 
         />
         <a 
           href='https://www.youtube.com/watch?v=joiw2CTcZQQ' target='_blank' rel='noreferrer'
-          className='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          className='border box-border font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
         >Video</a>
         <a 
           href='https://www.youtube.com/playlist?list=PLVJSCg8T091cgzTeEzK6INit2AkDImksP' target='_blank' rel='noreferrer'
-          className='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          className='border box-border font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
         >Playlist</a>
       </div>
 
@@ -136,11 +136,11 @@ export default function Page() : import('react').JSX.Element {
         />
         <FileDownloadButton
           itemKey='gof2-game-music.zip' linkText='Download' 
-          style='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]' 
+          style='border box-border cursor-pointer font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]' 
         />
         <a 
           href='https://www.youtube.com/watch?v=pK-CrpAc5Wo' target='_blank' rel='noreferrer'
-          className='border box-border text-[3.25vw] md:text-[1.25vw] font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-center uppercase w-[90%]'
+          className='border box-border font-semibold mt-[0.75vw] px-0 py-[0.5vw] text-[3.25vw] md:text-[1.25vw] text-center uppercase w-[90%]'
         >Video</a>
       </div>
     </div>
