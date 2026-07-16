@@ -22,10 +22,10 @@ import TabBar from '@app/_components/tabbar';
  * @component {@linkcode Navigation}
  * @requires {@linkcode catchphraseData} {@linkcode TabBar}
  */
-export default function Navigation(): import('react').JSX.Element {
+export default function Navigation(): import('react').JSX.Element | undefined {
   // React Hooks
-  const btnWidthRef = useRef(null);
-  const menuWidthRef = useRef(null);
+  const btnWidthRef = useRef<HTMLButtonElement>(null);
+  const menuWidthRef = useRef<HTMLInputElement>(null);
   const pathname = usePathname();
   // Local State Values
   const [catchphrase, setCatchphrase] = useState('');
@@ -54,7 +54,7 @@ export default function Navigation(): import('react').JSX.Element {
   }, [showDropdown]);
 
   /** Event handler to toggle the visibility of the dropdown menu. */
-  const toggleDropdown = (event) => {
+  const toggleDropdown = (event: { stopPropagation: () => void; }) => {
     event.stopPropagation();
     setShowDropdown(!showDropdown);
   };

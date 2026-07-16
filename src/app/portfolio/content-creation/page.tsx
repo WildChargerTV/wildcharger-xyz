@@ -5,7 +5,7 @@
  * Renders the Content Creation tab of the Portfolio route.
  * @component {@linkcode Page}
  */
-export default function Page() {
+export default function Page() : import('react').JSX.Element {
   /** Return the page content. */
   return (<>
     {/* Page Header */}

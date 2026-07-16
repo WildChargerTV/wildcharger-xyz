@@ -14,7 +14,7 @@ import TabBar from '@app/_components/tabbar';
  */
 export default function Layout({ 
   children
- }: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{ children: React.ReactNode }>) : import('react').JSX.Element {
   return (<main className='font-montserrat min-h-[33vw] mb-[50px] mt-[3vw] mx-auto text-[#e8e6e3] w-[85%]'>
     {children}
   </main>);

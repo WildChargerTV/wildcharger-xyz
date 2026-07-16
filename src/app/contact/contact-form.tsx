@@ -20,7 +20,7 @@ const { useProfanityBuster } = integrations;
  */
 export default function ContactForm() : import('react').JSX.Element {
   // React Hooks
-  const formRef = useRef(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const router = useRouter();
   // Local State Values
   const [name, setName] = useState("");
@@ -35,7 +35,7 @@ export default function ContactForm() : import('react').JSX.Element {
   const { buster } = useProfanityBuster({ config: pbConfig, preloadLanguages: ['en'] });
 
   /** On form submission, send an email to the general inquiries box. */
-  const onSubmit = (event) => {
+  const onSubmit = (event: { preventDefault: () => void; }) => {
     // Prevent a redirect or refresh.
     event.preventDefault();
     
