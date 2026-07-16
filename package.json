@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "next build",
-    "deploy": "next build && gh-pages -d out",
+    "deploy": "next build && gh-pages -b deploy -d out --cname wildcharger.xyz --nojekyll",
     "dev": "next dev",
     "info": "next info",
     "start": "next start"
