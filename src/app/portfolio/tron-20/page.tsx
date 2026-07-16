@@ -4,9 +4,9 @@
 import FileDownloadButton from '@app/_utils/FileDownloadButton';
 
 /**
+ * ### Portfolio Page: TRON 2.0 Tab
  * Renders the TRON 2.0 tab of the Portfolio route.
  * @component {@linkcode Page}
- * @kind Portfolio Page - TRON 2.0 Tab
  * @requires {@linkcode FileDownloadLink}
  */
 export default function Page() : import('react').JSX.Element {

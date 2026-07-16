@@ -1,12 +1,12 @@
 // * src/app/contact/page.tsx || Contact Page Component
 
 // Local Module Imports
-import ContactForm from './contact-form';
+import ContactForm from '@app/contact/contact-form';
 
 /**
- * Render's the site's contact page. Server component which utilizes the ContactForm client
- * component.
- * @component `Page`
+ * ### ontact Page Component
+ * Renders the site's Contact page.
+ * @component {@linkcode Page}
  * @kind Contact Page
  * @requires {@link ContactForm}
  */

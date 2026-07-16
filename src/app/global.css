@@ -1,12 +1,18 @@
-/* * src/app/global.css */
+/* * src/app/global.css || Global CSS Stylesheet */
 
+/* Node Module Imports */
 @import '../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 @import 'tailwindcss';
 
+/* Tailwind: Component-Level Custom CSS */
 @layer components {
+  /* Declare the site's background, which is a blue-to-red gradient. */
   .site-bg {
     background: linear-gradient(115deg, #16263c 0%, #16263c 55%, #aa272e 100%);
   }
+
+  /* Declare text outlines & their thicknesses. */
+  /* ? text-outline-title is only for the site logo. All other headers use text-outline-h. */
   .text-outline-title {
     -webkit-text-stroke: 0.35vw black;
     paint-order: stroke fill;
@@ -17,6 +23,7 @@
   }
 }
 
+/* Tailwind: Theme-Level Custom CSS */
 @theme inline {
   /* Font Variable Declarations */
   --font-lato: var(--font-lato);

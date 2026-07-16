@@ -1,4 +1,4 @@
-// * src/app/_components/navigation.tsx || Navigation Component
+// * src/app/_components/navigation.tsx || Navigation Layout Component
 
 // Switch to Client Mode (React Hooks in use)
 'use client';
@@ -13,12 +13,14 @@ import { catchphraseData } from '@app/_data';
 import TabBar from '@app/_components/tabbar';
 
 /**
- * Renders the site header & navbar. The only way to navigate between the site's three pages. The
- * navbar is sticky-positioned at z-index 1, allowing it to remain visible over the other elements
- * on the page.
+ * ### Navigation Layout Component
+ * Client component which renders the site header & navbar. The only way to navigate between the 
+ * site's three pages. The navbar is sticky-positioned at z-index 1, allowing it to remain visible
+ * over the other elementson the page.
  * 
- * Waits to render until a catchphrase has been loaded.
+ * Waits to render until a catchphrase has been loaded (returns `undefined` until then).
  * @component {@linkcode Navigation}
+ * @requires {@linkcode catchphraseData} {@linkcode TabBar}
  */
 export default function Navigation(): import('react').JSX.Element {
   // React Hooks
@@ -30,13 +32,19 @@ export default function Navigation(): import('react').JSX.Element {
   const [showDropdown, setShowDropdown] = useState(false);
   const [dropdownLeft, setDropdownLeft] = useState(0);
 
-  /** Pick a random catchphrase from the available dataset. */
+  /** 
+   * Pick a random catchphrase from the available dataset. Only invoked once at first load.
+   * ? sonarqube(typescript:S2245) can be ignored. No security gaps are presented by this function.
+   */
   useEffect(() => {
     const randomInt = Math.floor(Math.random() * catchphraseData.length);
     setCatchphrase(catchphraseData[randomInt]);
   }, []);
 
-  /** Set the absolute position of the dropdown menu based on the width of the button. */
+  /** 
+   * Set the absolute position of the dropdown menu based on the width of the button. Invoked every
+   * time the visibility of the dropdown menu is toggled.
+   */
   useEffect(() => {
     if (btnWidthRef.current && menuWidthRef.current)
       setDropdownLeft(

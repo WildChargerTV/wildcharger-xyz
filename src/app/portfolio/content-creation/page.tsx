@@ -1,9 +1,9 @@
 // * src/app/portfolio/content-creation/page.tsx || Portfolio Page & Content Creation Tab
 
 /**
+ * ### Portfolio Page: Content Creation Tab
  * Renders the Content Creation tab of the Portfolio route.
  * @component {@linkcode Page}
- * @kind Portfolio Page - Content Creation Tab
  */
 export default function Page() {
   /** Return the page content. */

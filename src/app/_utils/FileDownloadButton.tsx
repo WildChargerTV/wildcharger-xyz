@@ -7,8 +7,8 @@
 import { fileData } from '@app/_data';
 
 /**
- * Renders a button that will invoke a file download without needing to leave the website. The
- * `itemKey` must be the **exact** name of the file to download.
+ * Client component which renders a button that will invoke a file download without needing to
+ * leave the website. The `itemKey` must be the **exact** name of the file to download.
  * @component {@linkcode FileDownloadButton}
  * @requires {@linkcode fileData}
  * @returns `<button className={style}>{linkText}</button>`

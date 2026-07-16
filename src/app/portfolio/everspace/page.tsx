@@ -4,9 +4,9 @@
 import ESBuilderSlideshow from 'app/_utils/Slideshow';
 
 /**
+ * ### Portfolio Page: EVERSPACE™ Tab
  * Renders the EVERSPACE™ tab of the Portfolio route.
  * @component {@linkcode Page}
- * @kind Portfolio Page - EVERSPACE™ Tab
  */
 export default function Page() : import('react').JSX.Element {
   /** Return the page content. */

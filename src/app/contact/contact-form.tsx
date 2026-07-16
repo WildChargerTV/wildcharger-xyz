@@ -13,9 +13,10 @@ import emailjs from '@emailjs/browser';
 const { useProfanityBuster } = integrations;
 
 /**
- * Client component which renders the form used in the Contact page. Takes a name, and email
+ * ### Contact Form Component
+ * Client component which renders the form used in the Contact page. Takes a name, an email
  * address, and a message up to 750 characters long, and sends it to the inquiry inbox via EmailJS.
- * @component `ContactForm`
+ * @component {@linkcode ContactForm}
  */
 export default function ContactForm() : import('react').JSX.Element {
   // React Hooks
@@ -32,7 +33,6 @@ export default function ContactForm() : import('react').JSX.Element {
     detection: { caseSensitive: false, wholeWordsOnly: true, levenshteinDistance: 0, customWords: [] }
   };
   const { buster } = useProfanityBuster({ config: pbConfig, preloadLanguages: ['en'] });
-  
 
   /** On form submission, send an email to the general inquiries box. */
   const onSubmit = (event) => {
@@ -43,9 +43,11 @@ export default function ContactForm() : import('react').JSX.Element {
     // TODO allowlist. common profanity should be ok
     if(buster.detect(name).hasProfanity || buster.detect(message).hasProfanity) 
       alert('An error has occurred. Please double-check the contents of your submission and try again.');
+
     // Ensure the message is not too long.
     else if(message.length > 750)
       alert('Your message exceeds the 750-character limit. Please shorten your message and try again.');
+
     // Send the email, provided no other errors occur.
     else emailjs.sendForm('privateemail_info', 'contact_form', formRef.current, {
       publicKey: 'q6ePw5OFglADt8KoD'

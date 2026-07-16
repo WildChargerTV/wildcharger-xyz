@@ -1,9 +1,9 @@
 // * src/app/portfolio/page.tsx || Portfolio Page & Index Tab
 
 /**
+ * ### Portfolio Page: Index Tab
  * Renders the Index tab of the Portfolio route.
  * @component {@linkcode Page}
- * @kind Portfolio Page - Index Tab
  */
 export default function Page() : import('react').JSX.Element {
   /** Return the page content. */

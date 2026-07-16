@@ -4,10 +4,10 @@
 import FileDownloadButton from '@app/_utils/FileDownloadButton';
 
 /**
+ * ### Portfolio Page: Galaxy on Fire Tab
  * Renders the Galaxy on Fire tab of the Portfolio route.
  * @component {@linkcode Page}
- * @kind Portfolio Page - Galaxy on Fire Tab
- * @requires {@linkcode FileDownloadLink}
+ * @requires {@linkcode FileDownloadButton}
  */
 export default function Page() : import('react').JSX.Element {
   /** Return the page content. */

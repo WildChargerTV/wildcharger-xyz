@@ -18,9 +18,10 @@ const tabs = [
 ];
 
 /**
- * Renders the tab UI available only on the Portfolio page. Uses CLSX to highlight the active tab.
- * @component `TabBar`
- * @requires `clsx`
+ * ### Portfolio Tab Bar Component
+ * Client component which renders the tab UI available only on the Portfolio page. Uses `clsx` to
+ * highlight the active tab.
+ * @component {@linkcode TabBar}
  */
 export default function TabBar() : import('react').JSX.Element {
   // React Hooks

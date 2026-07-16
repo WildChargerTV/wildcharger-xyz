@@ -1,4 +1,6 @@
 // * src/app/_utils/Slideshow.tsx || Slideshow Utility Component
+// ? Although only one slideshow is currently in use, this component is meant to serve as the
+// ? universal manager of all slideshows going forward.
 
 // Switch to Client Mode (React Hooks in use)
 'use client';
@@ -7,7 +9,8 @@
 import { Carousel } from 'react-responsive-carousel';
 
 /**
- * Renders the slideshow component found in the EVERSPACE™ tab of the Portfolio page.
+ * ### EVERSPACE™ Builder Slideshow Utility Component
+ * Client component which renders the slideshow found in the EVERSPACE™ tab of the Portfolio page.
  * @component {@linkcode ESBuilderSlideShow} 
  */
 export default function ESBuilderSlideshow() : import('react').JSX.Element {

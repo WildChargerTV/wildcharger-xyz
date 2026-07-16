@@ -4,10 +4,10 @@
 import Link from 'next/link';
 
 /**
+ * ### Landing Page
  * Renders the site's landing page. Managed automatically by the Next.js directory-based routing
  * system.
  * @component {@linkcode Page} 
- * @kind Landing Page
  */
 export default function Page(): import('react').JSX.Element {
   /** Return the page content. */
@@ -39,8 +39,8 @@ export default function Page(): import('react').JSX.Element {
       </div>
     </div>
 
-    {/* Section 2: Twitch */}
     <h2 className='font-extrabold text-[9.5vw]/[125%] md:text-[3.25vw] max-md:mt-[9vw] mb-[1vw] text-outline-h'>
+    {/* Section 2: Live Streaming */}
       Live Streaming
     </h2>
     <div className='flex flex-col-reverse md:flex-row-reverse md:gap-x-[2%] justify-between'>

@@ -1,4 +1,4 @@
-// * src/app/layout.tsx || Root Layout File
+// * src/app/layout.tsx || Root Layout Component
 
 // Node Module Imports
 import { Metadata } from 'next';
@@ -13,6 +13,7 @@ import '@app/global.css';
  * Export the default, site-wide metadata set. Includes OpenGraph information for external embeds.
  * Dedicated generation files exist for the site's manifest.json, sitemap.xml, and robots.txt.
  * Automatically used at build time.
+ * TODO figure out what the deal is with that template title option
  */
 export const metadata: Metadata = {
   creator: 'Ethan Guan',
@@ -36,6 +37,7 @@ export const metadata: Metadata = {
 };
 
 /**
+ * ### Root Layout Component
  * Renders the root layout of the website. This is the highest-level component responsible for
  * the website's visible output to the end user.
  * 
@@ -53,9 +55,6 @@ export const metadata: Metadata = {
  * @requires {@linkcode lato} {@linkcode montserrat} {@linkcode titillium_web} 
  * @requires {@linkcode jet_bradley} {@linkcode xirod}
  * @requires {@linkcode Navigation} {@linkcode Footer}
- * @param {`Readonly<{ children: React.ReactNode }>} children Child nodes provided by the Next.js
- * Router. This parameter is automatically fulfilled at build time.
- * 
  */
 export default function RootLayout({
   children

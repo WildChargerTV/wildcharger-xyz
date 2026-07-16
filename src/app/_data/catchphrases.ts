@@ -1,5 +1,13 @@
-// * src/data/catchphrases.js
+// * src/data/catchphrases.ts || Catchphrases Datafile
 
+// Local Module Imports
+import Navigation from '@app/_components/navigation';
+
+/**
+ * Array of catchphrases, one of which is chosen at random to be the website logo subheader every
+ * time the site is loaded or reloaded.
+ * @see {@linkcode Navigation}
+ */
 const catchphraseData : Array<string> = [
   "Still inconsistent, but now with a website!",
   "Never had a TikTok, never will have one.",
@@ -33,4 +41,5 @@ const catchphraseData : Array<string> = [
   "Still the most entertaining drama of the year?"
 ];
 
+/** Export the catchphrase data. */
 export default catchphraseData;

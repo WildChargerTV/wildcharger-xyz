@@ -1,4 +1,4 @@
-// * src/app/_components/footer.tsx || Footer Component
+// * src/app/_components/footer.tsx || Footer Layout Component
 
 // Node Module Imports
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube, AiOutlineTwitch, AiOutlineX } from 'react-icons/ai';
@@ -8,12 +8,14 @@ import { PiCassetteTapeFill } from 'react-icons/pi';
 import Link from 'next/link';
 
 /**
+ * ### Footer Layout Component
  * Renders the site footer. Consists of two sections: on the left, a copyright disclaimer &
- * credits. On the right, self-promotion. Very simple.
+ * credits. On the right, self-promotion. Stacked vertically on mobile. Very simple.
  * @component {@linkcode Footer}
  */
 export default function Footer(): import('react').JSX.Element {
   return (<footer className='font-montserrat bg-[#40404080] block md:flex justify-around p-[1vw] text-[#e8e6e3]'>
+  /** Return the footer content. */
     {/* Credits: Site Technology */}
     <div className='max-w-[85%] md:max-w-[40%] m-auto md:m-0 text-center'>
       <p className='text-[3vw] md:text-[1vw] my-[3vw] md:my-[1vw]'>
