@@ -3,7 +3,7 @@
 // Node Module Imports
 import { Metadata } from 'next';
 // Local Module Imports
-import { lato, montserrat, titillium_web, jet_bradley, xirod } from './_fonts/fonts';
+import { lato, montserrat, titillium_web, jet_bradley, xirod } from '@app/_fonts/fonts';
 import Footer from '@app/_components/footer';
 import Navigation from '@app/_components/navigation';
 // Stylesheets
@@ -28,12 +28,15 @@ export const metadata: Metadata = {
     siteName: 'WildCharger.xyz',
     title: 'WildCharger.xyz',
     type: 'website',
-    url: 'https://wildcharger.xyz',
+    url: 'https://wildcharger.xyz'
+  },
+  other: {
+    'theme-color': '#aa272e'
   },
   title: {
     template: '%s | WildCharger.xyz',
-    default: 'WildCharger.xyz',
-  },
+    default: 'WildCharger.xyz'
+  }
 };
 
 /**
@@ -61,12 +64,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) : import('react').JSX.Element {
   /** Return the root layout content. */
   return (<html lang='en'>
-    <body
-      className={`
-        ${lato.variable} ${montserrat.variable} ${titillium_web.variable} ${jet_bradley.variable} ${xirod.variable} 
-        antialiased site-bg min-h-screen m-0
-      `}
-    >
+    <body className={`
+      ${lato.variable} ${montserrat.variable} ${titillium_web.variable} ${jet_bradley.variable} ${xirod.variable} 
+      antialiased min-h-screen m-0 site-bg
+    `}>
       <Navigation />
       {children}
       <Footer />

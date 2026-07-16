@@ -3,8 +3,8 @@
 // ? Default font is Montserrat. Apply at the component level as needed.
 
 // Node Module Imports
-import { Lato, Montserrat, Titillium_Web } from "next/font/google";
-import localFont from "next/font/local";
+import { Lato, Montserrat, Titillium_Web } from 'next/font/google';
+import localFont from 'next/font/local';
 
 /**
  * ### Lato: Google Font
@@ -12,9 +12,9 @@ import localFont from "next/font/local";
  * - Command: `font-lato`
  */
 export const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
-  variable: "--font-lato",
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
+  variable: '--font-lato',
 });
 
 /**
@@ -24,8 +24,8 @@ export const lato = Lato({
  * - Command: `font-montserrat`
  */
 export const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
+  subsets: ['latin'],
+  variable: '--font-montserrat',
 });
 
 /**
@@ -35,9 +35,9 @@ export const montserrat = Montserrat({
  * - Command: `font-titillium-web`
  */
 export const titillium_web = Titillium_Web({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "600", "700", "900"],
-  variable: "--font-titillium-web",
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '600', '700', '900'],
+  variable: '--font-titillium-web',
 });
 
 /**
@@ -46,8 +46,8 @@ export const titillium_web = Titillium_Web({
  * - Command: `font-jet-bradley`
  */
 export const jet_bradley = localFont({
-  src: "./JetBradley.woff",
-  variable: "--font-jet-bradley",
+  src: './JetBradley.woff',
+  variable: '--font-jet-bradley',
 });
 
 /**
@@ -56,6 +56,6 @@ export const jet_bradley = localFont({
  * - Command: `font-xirod`
  */
 export const xirod = localFont({
-  src: "./Xirod.woff",
-  variable: "--font-xirod",
+  src: './Xirod.woff',
+  variable: '--font-xirod',
 });

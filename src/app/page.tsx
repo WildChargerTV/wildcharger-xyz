@@ -55,8 +55,7 @@ export default function Page(): import('react').JSX.Element {
         title='twitchembed'
         className='aspect-video border-0 h-auto md:h-[33vh] max-md:mb-[25px]'
         allowFullScreen
-      ></iframe>
+      />
     </div>
-    
   </main>);
 }

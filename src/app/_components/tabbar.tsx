@@ -28,18 +28,9 @@ export default function TabBar() : import('react').JSX.Element {
   ];
 
   /** Return the tab bar content. */
-  return (<div className='inline-flex gap-x-7 items-center md:justify-center h-full mx-[1vw] w-max md:w-full'>
-    {tabs.map((link) => {
-      return (<Link
-        key={link.name}
-        href={link.href}
-        className={clsx(
-          'text-[#e8e6e3]',
-          { 'text-[#f9e2ad]' : pathname === link.href }
-        )}
-      >
-        {link.name}
-      </Link>)
-    })}
+  return (<div className='gap-x-7 h-full inline-flex items-center md:justify-center mx-[1vw] w-max md:w-full'>
+    {TABS.map((link) => <Link key={link.name} href={link.href}
+      className={clsx('text-[#e8e6e3]', { 'text-[#f9e2ad]' : pathname === link.href })}
+    >{link.name}</Link>)}
   </div>);
 }

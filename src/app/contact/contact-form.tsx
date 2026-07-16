@@ -72,19 +72,15 @@ export default function ContactForm() : import('react').JSX.Element {
     {/* Name/Username & Email Address */}
     <div className='max-md:flex-col gap-x-[0.5vw] max-md:gap-y-[1.5vw] inline-flex w-full'>
       <input 
-        type='text' 
-        name='user_name' 
+        type='text' name='user_name' 
         placeholder='Name or Username' 
-        required
-        onChange={(e) => setName(e.target.value)}
-        className='bg-[#ffffff26] border-2 border-solid border-b-gray-400 rounded-sm font-lato p-[5px] text-white text-[4vw] md:text-[1.5vw] box-border w-full md:w-[49.9%]'
+        required onChange={(e) => setName(e.target.value)}
+        className='bg-[#ffffff26] border-2 border-b-gray-400 border-solid box-border font-lato p-[5px] rounded-sm text-white text-[4vw] md:text-[1.5vw] w-full md:w-[49.9%]'
       />
       <input 
-        type='email' 
-        name='user_email' 
-        placeholder='Email Address' 
-        required
-        className='bg-[#ffffff26] border-2 border-solid border-b-gray-400 rounded-sm font-lato p-[5px] text-white text-[4vw] md:text-[1.5vw] box-border w-full md:w-[49.9%]'
+        type='email' name='user_email' 
+        placeholder='Email Address' required
+        className='bg-[#ffffff26] border-2 border-b-gray-400 border-solid box-border font-lato p-[5px] rounded-sm text-white text-[4vw] md:text-[1.5vw] w-full md:w-[49.9%]'
       />
     </div>
 
@@ -93,17 +89,17 @@ export default function ContactForm() : import('react').JSX.Element {
       <textarea 
         name='message' 
         placeholder='Your message here... (max. 750 chars)' 
-        required
-        onChange={(e) => setMessage(e.target.value)}
-        className='bg-[#ffffff26] border-2 border-solid box-border border-b-gray-400 rounded-sm font-lato w-full h-[33vh] text-[3vw] md:text-[1.25vw]'
+        required onChange={(e) => setMessage(e.target.value)}
+        className='bg-[#ffffff26] border-2 border-b-gray-400 border-solid box-border font-lato h-[33vh] rounded-sm text-[3vw] md:text-[1.25vw] w-full'
       />
     </div>
 
     {/* Submit Button */}
-    <div className='w-full flex justify-end'>
-      <button type='submit' className='px-[0.75vw] py-[0.35vw] cursor-pointer border-2 border-solid border-white rounded-sm text-[5vw] md:text-[1.75vw] font-semibold'>
-        Submit
-      </button>
+    <div className='flex justify-end w-full'>
+      <button 
+        type='submit' 
+        className='border-2 border-solid border-white cursor-pointer font-semibold px-[0.75vw] py-[0.35vw] rounded-sm text-[5vw] md:text-[1.75vw]'
+      >Submit</button>
     </div>
   </form>);
 }
