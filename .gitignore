@@ -1,9 +1,3 @@
-node_modules
-/.next/
-.vscode/
-private/
-next-env.d.ts
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -28,7 +22,9 @@ next-env.d.ts
 
 # misc
 .DS_Store
+.vscode/
 *.pem
+private/
 
 # debug
 npm-debug.log*
